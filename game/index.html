@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sizzle &amp; Serve — Lunch Rush</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍳</text></svg>">
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #241a10; }
+  #game { position: fixed; inset: 0; margin: auto; display: block; touch-action: none; cursor: pointer; }
+  /* Read aloud, never shown: the status line screen readers announce. */
+  #status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+</style>
+</head>
+<body>
+<canvas id="game" aria-label="Sizzle and Serve: run the kitchen, take orders, grill patties, chop vegetables, stack burgers and serve them before the patience bar runs out"></canvas>
+<p id="status" role="status" aria-live="polite"></p>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
